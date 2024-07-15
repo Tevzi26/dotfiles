@@ -1,0 +1,189 @@
+@import "/home/knez/.cache/wal/colors-waybar.css";
+/* -----------------------------------------------------
+ * General 
+ * ----------------------------------------------------- */
+
+* {
+  font-family: "Fira Sans semibold", FontAwesome, Roboto, Helvetica, Arial,
+    sans-serif;
+  border: none;
+  border-radius: 10px;
+  color: @foreground;
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: bold;
+}
+
+tooltip {
+  background-color: @color8;
+}
+
+/*------------------------------------------------------
+ * Modules
+ *------------------------------------------------------*/
+
+/* Backlight slider */
+
+#brightness {
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 0px 3px 0px 0px;
+  background-color: @background;
+}
+#backlight-slider slider {
+  min-height: 0px;
+  min-width: 0px;
+  opacity: 0;
+  background-image: none;
+  border: none;
+  box-shadow: none;
+}
+#backlight-slider trough {
+  min-height: 10px;
+  min-width: 25px;
+  border-radius: 5px;
+  background-color: @foreground;
+}
+#backlight-slider highlight {
+  min-width: 10px;
+  border-radius: 5px;
+  background-color: @color2;
+}
+#backlight {
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+/* Battery */
+
+#battery {
+  margin-right: 5px;
+  margin-left: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: @background;
+}
+#battery.warning {
+  color: @color2;
+}
+#battery.critical {
+  color: red;
+}
+
+/* Group-network*/
+
+#net {
+  margin-right: 5px;
+  margin-left: 5px;
+  background-color: @background;
+}
+#bluetooth {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+#network {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* Clock */
+
+#clock {
+  margin-right: 10px;
+  margin-left: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: @color2;
+  font-weight: bold;
+  border: solid;
+  border-width: 3px;
+  border-color: @foreground;
+}
+
+/* wireplumber */
+
+#wireplumber {
+  margin: 0px 5px 0px;
+  padding: 0px 5px 0px;
+  background-color: @background;
+}
+
+/* workspaces */
+
+#workspaces {
+  margin: 0px 5px 0px;
+  padding: 0px 5px 0px;
+  background-color: @background;
+  border-radius: 20px;
+}
+#workspaces button {
+  min-height: 1px;
+  padding: 4px 4px;
+  margin: 5px 2px;
+  border-radius: 20px;
+  background-color: @color8;
+  transition: padding 0.4s;
+  box-shadow: none;
+}
+#workspaces button.active {
+  background-color: @color2;
+  padding: 4px 20px;
+  transition: padding 0.4s;
+}
+#workspaces button:hover {
+  background: @foreground;
+  border: none;
+}
+
+/* Taskbar */
+
+#taskbar {
+  margin: 0px 5px 0px;
+}
+#taskbar button {
+  background: @background;
+  margin: 0px 5px 0px;
+  box-shadow: none;
+}
+#taskbar button:hover {
+  background: @color2;
+}
+
+/* applauncher */
+
+#custom-applauncher {
+  background-color: @color2;
+  color: @foreground;
+  padding: 0px 7px 0px;
+  margin-left: 10px;
+  border: solid;
+  border-width: 3px;
+  border-color: @foreground;
+}
+
+/* Updates */
+
+#custom-updates {
+  background-color: @background;
+  margin: 0px 5px 0px;
+  padding: 0px 10px 0px 8px;
+  background-color: @color2;
+  border: solid;
+  border-width: 3px;
+  border-color: @foreground;
+}
+
+/* Shutdown */
+
+#custom-shutdown {
+  background-color: @background;
+  margin: 0px 5px 0px;
+  padding: 0px 13px 0px 10px;
+}
+
+/* Notifications */
+#custom-notification {
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 0px 12px 0px 8px;
+  background-color: @background;
+}
